@@ -1,0 +1,24 @@
+{
+  "products": [
+    { "id": 1, "title": "Water", "price": 50 },
+    { "id": 2, "title": "Chips", "price": 120 },
+    { "id": 3, "title": "Chocolate", "price": 150 },
+    { "id": 4, "title": "Waffles", "price": 100 },
+    { "id": 5, "title": "Tortilla", "price": 30 },
+    { "id": 6, "title": "Muffin", "price": 40 },
+    { "id": 7, "title": "Pretzel", "price": 20 },
+    { "id": 8, "title": "Falafel", "price": 250 },
+    { "id": 9, "title": "Cookies", "price": 80 },
+    { "id": 10, "title": "Crackers", "price": 90 }
+  ],
+  "money": [
+    { "id": 1, "par": 1, "quantity": 10 },
+    { "id": 2, "par": 2, "quantity": 10 },
+    { "id": 3, "par": 5, "quantity": 20 },
+    { "id": 4, "par": 10, "quantity": 20 },
+    { "id": 5, "par": 10, "quantity": 50 },
+    { "id": 6, "par": 50, "quantity": 20 },
+    { "id": 7, "par": 100, "quantity": 50 },
+    { "id": 8, "par": 200, "quantity": 20 }
+  ]
+}
