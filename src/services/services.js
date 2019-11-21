@@ -1,6 +1,6 @@
 export default class ProductsService {
 
-    _apiBase = 'https://jsonplaceholder.typicode.com/RuslanVahapov/vending-machine';
+    _apiBase = 'https://my-json-server.typicode.com/RuslanVahapov/vending-machine';
 
     async getResource(url) {
         const res = await fetch(`${this._apiBase}${url}`);
