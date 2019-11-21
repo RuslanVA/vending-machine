@@ -1,9 +1,9 @@
 import React from 'react';
-import ProductList from '../products-list/product-list';
+import ProductsList from '../products-list/products-list';
 
 const HomePage = () => {
     return (
-        <ProductList />
+        <ProductsList />
     );
 };
 
