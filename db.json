@@ -20,5 +20,8 @@
     { "id": 6, "par": 50, "quantity": 20 },
     { "id": 7, "par": 100, "quantity": 50 },
     { "id": 8, "par": 200, "quantity": 20 }
-  ]
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
