@@ -1,0 +1,36 @@
+import React, { Component, Fragment } from 'react';
+
+import Spinner from '../spinner/spinner';
+import ErrorIndicator from '../error-indicator/error-indicator';
+
+const ChangeWindow = ({ change }) => {
+    return (
+        <Fragment>
+            <h3 className="container">Take your change!</h3>
+            <div className="container jumbotron">
+                <p>{change === 0 ? 'There are no change...' : change}</p>
+            </div>
+        </Fragment>
+    );
+};
+
+class ChangeWindowContainer extends Component {
+
+
+    render() {
+        const { loading, error, change } = this.props;
+
+        if (loading) {
+            return <Spinner />;
+        }
+
+        if (error) {
+            return <ErrorIndicator />;
+        }
+        return <ChangeWindow
+            change={change}
+        />;
+    }
+}
+
+export default ChangeWindowContainer;

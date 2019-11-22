@@ -18,10 +18,11 @@ class ProductsList extends Component{
                 {
                     this.props.products.map((product) => {
                         return (
-                            <li className="list-group-item list-group-item-action d-flex justify-content-between align-items-center" key={product.id}>
                                 <ProductsListItem
-                                    product={product}/>
-                            </li>
+                                    product={product}
+                                    key={product.id}
+                                    onAddProduct={this.props.onAddProduct}
+                                />
                         );
                     })
                 }
@@ -32,6 +33,7 @@ class ProductsList extends Component{
 }
 
 class ProductsListContainer extends Component {
+
 
     componentDidMount() {
         this.props.fetchProducts();
@@ -50,6 +52,7 @@ class ProductsListContainer extends Component {
         }
         return <ProductsList
             products={products}
+            onAddProduct={this.props.onAddProduct}
         />;
     }
 }
