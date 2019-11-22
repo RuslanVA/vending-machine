@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 
+
 export default class Receiver extends Component{
 
     constructor() {
@@ -17,10 +18,10 @@ export default class Receiver extends Component{
 
         this.onSubmit = (e) => {
             e.preventDefault();
-            console.log(this.state.value);
             this.props.onMoneyCheck(this.state.value);
+            this.props.notify(`You send ${this.props.toPounds(this.state.value)}`);
+        };
 
-        }
 
     }
 

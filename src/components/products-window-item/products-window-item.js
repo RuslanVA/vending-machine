@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 const ProductsWindowItem = ({ product, quantities }) => {
-    const { title, price, id } = product;
+    const { title, id } = product;
 
     return (
         <li className="list-group-item list-group-item d-flex justify-content-between align-items-center" key={id}>

@@ -1,4 +1,4 @@
-import React, {Component, Fragment } from 'react';
+import React, {Component} from 'react';
 
 class ProductsListItem extends Component {
     constructor(){
@@ -13,7 +13,7 @@ class ProductsListItem extends Component {
         return (
             <li className="list-group-item list-group-item-action d-flex justify-content-between align-items-center" key={id} onClick={this.onAddItem}>
                 {title}
-                <span className="badge badge-light badge-pill">Price: {price}</span>
+                <span className="badge badge-light badge-pill">Price: {this.props.toPounds(price)}</span>
             </li>
         );
     }

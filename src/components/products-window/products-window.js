@@ -18,7 +18,7 @@ const ProductsWindow = ({ windowProducts, windowQuantities }) => {
                                     quantities={windowQuantities}/>
                             );
                         })
-                        : <span>Buy a product</span>
+                        : <span>Buy a product!</span>
                 }
             </ul>
         </Fragment>

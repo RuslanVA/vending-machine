@@ -22,6 +22,7 @@ class ProductsList extends Component{
                                     product={product}
                                     key={product.id}
                                     onAddProduct={this.props.onAddProduct}
+                                    toPounds={this.props.toPounds}
                                 />
                         );
                     })
@@ -40,7 +41,7 @@ class ProductsListContainer extends Component {
     }
 
     render() {
-        const { products, loading, error } = this.props;
+        const { products, loading, error, toPounds } = this.props;
 
 
         if (loading) {
@@ -53,6 +54,7 @@ class ProductsListContainer extends Component {
         return <ProductsList
             products={products}
             onAddProduct={this.props.onAddProduct}
+            toPounds={toPounds}
         />;
     }
 }
