@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ErrorIndicator = () => {
-    return <div>Error!</div>;
+    return <div className="btn btn-danger disabled">Error!</div>;
 };
 
 export default ErrorIndicator;

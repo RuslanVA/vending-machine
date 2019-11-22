@@ -10,22 +10,26 @@ import compose from '../../utils/compose';
 import Spinner from '../spinner/spinner';
 import ErrorIndicator from '../error-indicator/error-indicator';
 
-const ProductsList = ({ products }) => {
-    return (
-        <ul>
-            {
-                products.map((product) => {
-                    return (
-                        <li className="list-group-item list-group-item-action" key={product.id}>
-                            <ProductsListItem
-                                product={product}/>
-                        </li>
-                    );
-                })
-            }
-        </ul>
-    );
-};
+class ProductsList extends Component{
+
+    render(){
+        return (
+            <ul className="container list-group">
+                {
+                    this.props.products.map((product) => {
+                        return (
+                            <li className="list-group-item list-group-item-action d-flex justify-content-between align-items-center" key={product.id}>
+                                <ProductsListItem
+                                    product={product}/>
+                            </li>
+                        );
+                    })
+                }
+            </ul>
+        );
+    }
+
+}
 
 class ProductsListContainer extends Component {
 
@@ -44,7 +48,9 @@ class ProductsListContainer extends Component {
         if (error) {
             return <ErrorIndicator />;
         }
-        return <ProductsList products={products}/>;
+        return <ProductsList
+            products={products}
+        />;
     }
 }
 

@@ -1,10 +1,21 @@
-import React from 'react';
+import React, {Component, Fragment} from 'react';
 import ProductsList from '../products-list/products-list';
+import ShoppingCartContainer from "../shopping-cart/shopping-cart";
 
-const HomePage = () => {
-    return (
-        <ProductsList />
-    );
-};
+class HomePage extends Component {
+
+    state = {
+        products: []
+    };
+
+    render(){
+        return (
+            <Fragment>
+                <ProductsList />
+                <ShoppingCartContainer />
+            </Fragment>
+        );
+    }
+}
 
 export default HomePage;

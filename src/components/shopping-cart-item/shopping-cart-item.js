@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-const ProductsListItem = ({ product }) => {
+const ShoppingCartItem = ({ product }) => {
     const { title, price, id } = product;
     return (
         <Fragment>
@@ -10,4 +10,4 @@ const ProductsListItem = ({ product }) => {
     );
 };
 
-export default ProductsListItem;
+export default ShoppingCartItem;
